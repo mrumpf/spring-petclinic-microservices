@@ -1,10 +1,23 @@
+# Turn off security for the demo application
+management:
+  security:
+    enabled: false
+
 server.port: 8888
 spring:
+  application:
+    name: configserver
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/spring-petclinic/spring-petclinic-microservices-config
+          uri: https://github.com/mrumpf/spring-petclinic-microservices-config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
 ---
 spring:
   profiles: local
@@ -13,3 +26,11 @@ spring:
       server:
         git:
           uri: file:///${GIT_REPO}
+
+---
+spring:
+  profiles: docker
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:8761/eureka/
