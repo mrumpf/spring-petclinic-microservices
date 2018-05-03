@@ -1,3 +1,11 @@
+NOTE: This repository contains the infrastrcuture microservices only. The application microservices will be split up into
+different repositories:
+* https://github.com/mrumpf/spring-petclinic-vets-service
+* https://github.com/mrumpf/spring-petclinic-visits-service
+* https://github.com/mrumpf/spring-petclinic-customer-service
+* https://github.com/mrumpf/spring-petclinic-api-gateway
+
+
 # Distributed version of the Spring PetClinic Sample Application built with Spring Cloud 
 
 [![Build Status](https://travis-ci.org/spring-petclinic/spring-petclinic-microservices.svg?branch=master)](https://travis-ci.org/spring-petclinic/spring-petclinic-microservices/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Dependency Status](https://www.versioneye.com/user/projects/58b2c56f9ceb450031272d6a/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58b2c56f9ceb450031272d6a)
