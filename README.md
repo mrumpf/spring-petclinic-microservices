@@ -2,7 +2,7 @@ NOTE: This repository contains the infrastrcuture microservices only. The applic
 different repositories:
 * https://github.com/mrumpf/spring-petclinic-vets-service
 * https://github.com/mrumpf/spring-petclinic-visits-service
-* https://github.com/mrumpf/spring-petclinic-customer-service
+* https://github.com/mrumpf/spring-petclinic-customers-service
 * https://github.com/mrumpf/spring-petclinic-api-gateway
 
 
