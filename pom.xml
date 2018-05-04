@@ -14,14 +14,10 @@
     <name>${project.artifactId}</name>
 	<packaging>pom</packaging>
 
-	<modules>
-		<module>spring-petclinic-admin-server</module>
-		<module>spring-petclinic-customers-service</module>
-		<module>spring-petclinic-vets-service</module>
-		<module>spring-petclinic-visits-service</module>
-		<module>spring-petclinic-config-server</module>
+    <modules>
+	<module>spring-petclinic-admin-server</module>
+	<module>spring-petclinic-config-server</module>
         <module>spring-petclinic-discovery-server</module>
-        <module>spring-petclinic-api-gateway</module>
         <module>spring-petclinic-monitoring</module>
         <module>spring-petclinic-tracing-server</module>
     </modules>
