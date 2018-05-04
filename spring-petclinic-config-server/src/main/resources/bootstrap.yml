@@ -11,7 +11,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/mrumpf/spring-petclinic-microservices-config
+          uri: https://github.com/mrumpf/spring-petclinic-microservices-config.git
 
 eureka:
   client:

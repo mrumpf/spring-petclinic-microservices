@@ -1,14 +1,14 @@
 version: '2'
 services:
   discovery-server:
-    image: mszarlinski/spring-petclinic-discovery-server
+    image: mrumpf/spring-petclinic-discovery-server
     container_name: discovery-server
     mem_limit: 256M
     ports:
      - 8761:8761
 
   config-server:
-    image: mszarlinski/spring-petclinic-config-server
+    image: mrumpf/spring-petclinic-config-server
     container_name: configserver
     mem_limit: 256M
     links:
@@ -20,7 +20,7 @@ services:
      - 8888:8888
 
   customers-service:
-    image: mszarlinski/spring-petclinic-customers-service
+    image: mrumpf/spring-petclinic-customers-service
     container_name: customers-service
     mem_limit: 256M
     links:
@@ -35,7 +35,7 @@ services:
     - 8081:8081
 
   visits-service:
-    image: mszarlinski/spring-petclinic-visits-service
+    image: mrumpf/spring-petclinic-visits-service
     container_name: visits-service
     mem_limit: 256M
     links:
@@ -50,7 +50,7 @@ services:
      - 8082:8082
 
   vets-service:
-    image: mszarlinski/spring-petclinic-vets-service
+    image: mrumpf/spring-petclinic-vets-service
     container_name: vets-service
     mem_limit: 256M
     links:
@@ -65,7 +65,7 @@ services:
      - 8083:8083
 
   api-gateway:
-    image: mszarlinski/spring-petclinic-api-gateway
+    image: mrumpf/spring-petclinic-api-gateway
     container_name: api-gateway
     mem_limit: 256M
     links:
@@ -83,7 +83,7 @@ services:
      - 8080:8080
 
   tracing-server:
-    image: mszarlinski/spring-petclinic-tracing-server
+    image: mrumpf/spring-petclinic-tracing-server
     container_name: tracing-server
     mem_limit: 256M
     links:
@@ -97,7 +97,7 @@ services:
      - 9411:9411
 
   admin-server:
-    image: mszarlinski/spring-petclinic-admin-server
+    image: mrumpf/spring-petclinic-admin-server
     container_name: admin-server
     mem_limit: 256M
     links:
